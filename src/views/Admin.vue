@@ -6,7 +6,7 @@
             <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-white logo-dark">
                 <!-- Brand demo (see assets/css/demo/demo.css) -->
                 <div class="app-brand demo">
-                    <a href="index.html" class="app-brand-text demo sidenav-text font-weight-normal ml-2">三葉餐廳</a>
+					<router-link to="/" active-class="app-brand-text demo sidenav-text font-weight-normal ml-2">三葉餐廳</router-link>
                     <a href="javascript:" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
                         <i class="ion ion-md-menu align-middle"></i>
                     </a>
@@ -175,3 +175,15 @@
     </div>
     <!-- [ Layout wrapper] End -->
 </template>
+
+
+<script>
+export default {
+  name: 'Admin',
+}
+</script>
+
+<style>
+/* Libs */
+@import "../assets/libs/flot/flot.scss";
+</style>
