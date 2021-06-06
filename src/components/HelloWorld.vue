@@ -1,33 +1,160 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <div class="container">
+    <div class="card my-4">
+        <div class="card-header with-elements">
+            <div class="card-header-title mb-0">
+                <h1>6/5(六) 三葉家庭日,外帶表單</h1>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita ullam ipsa quis amet iure dolores eaque tempore necessitatibus suscipit doloremque velit, ratione sunt quibusdam id obcaecati nesciunt consectetur tenetur.
+            </p>
+        </div>
+    </div>
+
+    <div class="card my-4">
+        <h4 class="card-header">訂購人資訊</h4>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="form-label">姓名(必填)</label>
+                <input type="email" class="form-control" placeholder="取餐人姓名">
+                <div class="clearfix"></div>
+            </div>
+            <div class="form-group">
+                <label class="form-label">電話(必填)</label>
+                <input type="email" class="form-control" placeholder="取餐人電話">
+                <div class="clearfix"></div>
+            </div>
+            <div class="form-group">
+                <label class="form-label">訂購時間(必填)</label>
+                <select class="custom-select">
+                    <option>請選擇時間</option>
+                    <option>11:30</option>
+                    <option>12:00</option>
+                    <option>12:30</option>
+                </select>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card my-4">
+        <h4 class="card-header">小家庭合菜</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <div class="itemInfo">
+                        <div class="itemName">主餐選里肌肉</div>
+                        <div class="itemPrice badge badge-pill badge-primary">$<span>400</span></div>
+                  </div>
+                  <div class="form-group ml-auto mb-0">
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                            <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
+                        </span>
+                        <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
+                        <span class="input-group-append">
+                            <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
+                        </span>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex align-items-center">
+                <div class="itemInfo">
+                    <div class="itemName">主餐選油雞</div>
+                    <div class="itemPrice badge badge-pill badge-primary">$<span>400</span></div>
+                </div>
+                <div class="form-group ml-auto mb-0">
+                  <div class="input-group">
+                      <span class="input-group-prepend">
+                          <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
+                      </span>
+                      <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
+                      <span class="input-group-append">
+                          <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
+                      </span>
+                  </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <div class="card my-4">
+        <h4 class="card-header"> 單點區</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="d-flex align-items-center">
+                    <div class="itemInfo">
+                        <div class="itemName">單點一</div>
+                        <div class="itemPrice badge badge-pill badge-primary">$<span>100</span></div>
+                    </div>
+                    <div class="form-group ml-auto mb-0">
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
+                            </span>
+                            <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
+                            <span class="input-group-append">
+                                <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex align-items-center">
+                <div class="itemInfo">
+                    <div class="itemName">單點二</div>
+                    <div class="itemPrice badge badge-pill badge-primary">$<span>80</span></div>
+                </div>
+                <div class="form-group ml-auto mb-0">
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                            <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
+                        </span>
+                        <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
+                        <span class="input-group-append">
+                            <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+              <div class="d-flex align-items-center">
+                <div class="itemInfo">
+                    <div class="itemName">單點三</div>
+                    <div class="itemPrice badge badge-pill badge-primary">$<span>10</span></div>
+                </div>
+                <div class="form-group ml-auto mb-0">
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                            <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
+                        </span>
+                        <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
+                        <span class="input-group-append">
+                            <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
+                        </span>
+                    </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+    
+    <div class="card my-4">
+        <h4 class="card-header">訂單備註</h4>
+        <div class="card-body">
+            <div class="form-group">
+                <textarea class="form-control" placeholder="請寫下備註"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ComfirmModal">送出訂單</button>
+</div>
 </template>
 
 <script>
