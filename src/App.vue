@@ -1,11 +1,11 @@
 <template>
-  <router-link to="/">Go to Home</router-link>
-  <router-link to="/hello">Hello</router-link>
-  <router-view></router-view>
+  <div id="nav">
+    <router-link to="/">Home</router-link>
+  </div>
+  <router-view/>
 </template>
 
 <script>
-
 export default {
   name: 'App',
 }
