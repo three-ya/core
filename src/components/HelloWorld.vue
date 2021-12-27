@@ -12,6 +12,8 @@
           placeholder="請輸入姓名或電話"
           aria-label="Search"
           style="padding: 16px; font-size: 1.2rem"
+          v-model="searchKey"
+          @change="doSearch"
         />
       </form>
       <!--搜尋結果-->
@@ -109,10 +111,32 @@
 </template>
 
 <script>
+import { getOrderDoc } from '@/assets/js/getOrderDoc';
+
 export default {
   name: "HelloWorld",
-  props: {
-    msg: String,
+  data() {
+    return {
+        formListRows: null,
+        searchKey: ""
+    }
   },
+  methods: {
+    //取得表單
+    async accessSpreadsheet() {
+      const orderDoc = await getOrderDoc();
+      const orderSheet = orderDoc.sheetsByTitle["內用(原始回覆)"];
+      this.formListRows = await orderSheet.getRows();
+    },
+    doSearch() {
+        this.accessSpreadsheet();
+
+        for (let index = 0; index < this.formListRows.length; index++) {
+            const formRow = this.formListRows[index];
+            
+            console.log(formRow);
+        }
+    },
+  }
 };
 </script>
