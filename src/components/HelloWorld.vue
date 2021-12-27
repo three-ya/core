@@ -1,167 +1,118 @@
 <template>
-  <div class="container">
-    <div class="card my-4">
-        <div class="card-header with-elements">
-            <div class="card-header-title mb-0">
-                <h1>6/5(六) 三葉家庭日,外帶表單</h1>
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita ullam ipsa quis amet iure dolores eaque tempore necessitatibus suscipit doloremque velit, ratione sunt quibusdam id obcaecati nesciunt consectetur tenetur.
-            </p>
-        </div>
-    </div>
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h1 class="mt-5 mb-4 text-center" style="color: #960b0b">
+        三葉餐廳 <br />
+        2022年 過年訂單查詢系統
+      </h1>
+      <form class="mb-4">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="請輸入姓名或電話"
+          aria-label="Search"
+          style="padding: 16px; font-size: 1.2rem"
+        />
+      </form>
+      <!--搜尋結果-->
+      <p class="mt-4 mb-4 text-center">＝＝＝＝ 以下為查詢結果 ＝＝＝＝</p>
 
-    <div class="card my-4">
-        <h4 class="card-header">訂購人資訊</h4>
-        <div class="card-body">
-            <div class="form-group">
-                <label class="form-label">姓名(必填)</label>
-                <input type="email" class="form-control" placeholder="取餐人姓名">
-                <div class="clearfix"></div>
-            </div>
-            <div class="form-group">
-                <label class="form-label">電話(必填)</label>
-                <input type="email" class="form-control" placeholder="取餐人電話">
-                <div class="clearfix"></div>
-            </div>
-            <div class="form-group">
-                <label class="form-label">訂購時間(必填)</label>
-                <select class="custom-select">
-                    <option>請選擇時間</option>
-                    <option>11:30</option>
-                    <option>12:00</option>
-                    <option>12:30</option>
-                </select>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card my-4">
-        <h4 class="card-header">小家庭合菜</h4>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <div class="d-flex align-items-center">
-                  <div class="itemInfo">
-                        <div class="itemName">主餐選里肌肉</div>
-                        <div class="itemPrice badge badge-pill badge-primary">$<span>400</span></div>
-                  </div>
-                  <div class="form-group ml-auto mb-0">
-                    <div class="input-group">
-                        <span class="input-group-prepend">
-                            <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
-                        </span>
-                        <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
-                        <span class="input-group-append">
-                            <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
-                        </span>
-                    </div>
-                </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card mb-3">
+            <div class="card-header">#01</div>
+            <div class="card-body">
+              <h5 class="card-title">⟪ 外帶訂單 ⟫</h5>
+              <div>取餐姓名：林淑晴</div>
+              <div>聯絡手機：0932662570</div>
+              <div>取餐日期：1/31 除夕</div>
+              <div>取餐時間：16:00</div>
+              <hr />
+              <div>預定內容：</div>
+              <div>
+                【合菜】
+                <ul>
+                  <li>5350 X 1 組</li>
+                </ul>
+                【單點】
+                <ul>
+                  <li>五福臨門冷拼盤 X 1</li>
+                  <li>鴻運發財海鮮羹 X 1</li>
+                  <li>蒜味白灼海大蝦 X 1</li>
+                  <li>沙律小龍蝦沙拉 X 1</li>
+                </ul>
               </div>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex align-items-center">
-                <div class="itemInfo">
-                    <div class="itemName">主餐選油雞</div>
-                    <div class="itemPrice badge badge-pill badge-primary">$<span>400</span></div>
-                </div>
-                <div class="form-group ml-auto mb-0">
-                  <div class="input-group">
-                      <span class="input-group-prepend">
-                          <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
-                      </span>
-                      <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
-                      <span class="input-group-append">
-                          <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
-                      </span>
-                  </div>
+              <hr />
+              <div>
+                備註：麻油雞米糕雙拼可以換燒鰻魚米糕雙拼嗎？補差價也沒關係
               </div>
             </div>
-          </li>
-        </ul>
-    </div>
-
-    <div class="card my-4">
-        <h4 class="card-header"> 單點區</h4>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <div class="d-flex align-items-center">
-                    <div class="itemInfo">
-                        <div class="itemName">單點一</div>
-                        <div class="itemPrice badge badge-pill badge-primary">$<span>100</span></div>
-                    </div>
-                    <div class="form-group ml-auto mb-0">
-                        <div class="input-group">
-                            <span class="input-group-prepend">
-                                <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
-                            </span>
-                            <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
-                            <span class="input-group-append">
-                                <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex align-items-center">
-                <div class="itemInfo">
-                    <div class="itemName">單點二</div>
-                    <div class="itemPrice badge badge-pill badge-primary">$<span>80</span></div>
-                </div>
-                <div class="form-group ml-auto mb-0">
-                    <div class="input-group">
-                        <span class="input-group-prepend">
-                            <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
-                        </span>
-                        <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
-                        <span class="input-group-append">
-                            <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
-                        </span>
-                    </div>
-                </div>
+            <div
+              class="card-footer text-white"
+              style="background-color: #474747"
+            >
+              <div>總金額：$5380</div>
+              <div>付款狀態：已付清</div>
             </div>
-          </li>
-          <li class="list-group-item">
-              <div class="d-flex align-items-center">
-                <div class="itemInfo">
-                    <div class="itemName">單點三</div>
-                    <div class="itemPrice badge badge-pill badge-primary">$<span>10</span></div>
-                </div>
-                <div class="form-group ml-auto mb-0">
-                    <div class="input-group">
-                        <span class="input-group-prepend">
-                            <button class="btn btn-secondary" type="button"><i class="feather icon-minus"></i></button>
-                        </span>
-                        <input type="number" class="form-control" placeholder="Product name" min="0" max="10" value="0">
-                        <span class="input-group-append">
-                            <button class="btn btn-secondary" type="button"><i class="feather icon-plus"></i></button>
-                        </span>
-                    </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3">
+            <div class="card-header">#02</div>
+            <div class="card-body">
+              <h5 class="card-title">⟪ 內用訂單 ⟫</h5>
+              <div>訂桌姓名：林淑晴</div>
+              <div>聯絡手機：0932662570</div>
+              <div>用餐日期：2/3 初三</div>
+              <div>用餐時段：18:00 - 19:20</div>
+              <hr />
+              <div>
+                預定內容：
+                <p>5350 X 3桌</p>
+              </div>
+              <hr />
+              <div>
+                備註：麻油雞米糕雙拼可以換燒鰻魚米糕雙拼嗎？補差價也沒關係
               </div>
             </div>
-          </li>
-        </ul>
-    </div>
-    
-    <div class="card my-4">
-        <h4 class="card-header">訂單備註</h4>
-        <div class="card-body">
-            <div class="form-group">
-                <textarea class="form-control" placeholder="請寫下備註"></textarea>
+            <div
+              class="card-footer text-white"
+              style="background-color: #474747"
+            >
+              <div>總金額：$5380</div>
+              <div>付款狀態：已付清</div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#ComfirmModal">送出訂單</button>
-</div>
+    <div class="container py-5">
+      <p class="text-center">
+        如需要更改或取消訂單，請聯繫我們！<br />
+        <a href="tel:+88689325261">089-325261</a>
+      </p>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="tel:+88689325261" class="btn btn-primary" type="button"
+          >立即通話</a
+        >
+      </div>
+    </div>
+  </main>
+
+  <!--footer-->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted text-center">三葉精緻餐廳 祝您虎年行大運</span>
+    </div>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
