@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0dad14"],{"6ce6":function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",[e("BasicForm",{attrs:{pageTitle:"新增表單",saveBtnTtile:"新增表單"}})],1)},c=[],r=e("839a"),i={name:"EditForm",data:function(){return{}},components:{BasicForm:r["a"]}},o=i,s=e("2877"),u=Object(s["a"])(o,a,c,!1,null,null,null);t["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-2d0dad14.7b808f79.js.map
